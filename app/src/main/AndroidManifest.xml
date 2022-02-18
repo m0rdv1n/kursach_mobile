@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kursach">
         <activity
+            android:name=".AfishaActivity"
+            android:exported="false" />
+        <activity
             android:name=".AuthorizationActivity"
             android:exported="false" />
         <activity

@@ -3,6 +3,7 @@ package com.m0rdv1n.kursach;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -54,11 +55,13 @@ public class RegistrationActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Toast.makeText(RegistrationActivity.this, "Authentication success.",
+                            Toast.makeText(RegistrationActivity.this, "Успешная регистрация",
                                     Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(RegistrationActivity.this, AuthorizationActivity.class);
+                            startActivity(intent);
                         } else {
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(RegistrationActivity.this, "Authentication failed.",
+                            Toast.makeText(RegistrationActivity.this, "Что-то пошло не так...",
                                     Toast.LENGTH_SHORT).show();
                         }
                     }
