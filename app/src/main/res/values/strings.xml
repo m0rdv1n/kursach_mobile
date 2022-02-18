@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">kursach</string>
+    <string name="app_btn_signin">Войти</string>
+    <string name="app_btn_signup">Зарегистрироваться</string>
+
+    <string name="app_signup_title">Регистрация</string>
+    <string name="app_signin_title">Авторизация</string>
+
+    <string name="app_name_subtitile">Имя</string>
+    <string name="app_email_subtitile">Почта</string>
+    <string name="app_password_subtitile">Пароль</string>
+
+    <string name="app_already_signin">Есть аккаунт? Войти</string>
+    <string name="app_already_signup">Нет аккаута? Создать</string>
+</resources>
