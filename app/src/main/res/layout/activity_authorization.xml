@@ -34,7 +34,7 @@
             android:text="@string/app_email_subtitile" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/inputEmailSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -50,7 +50,7 @@
             android:text="@string/app_password_subtitile" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/inputPasswordSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -65,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:backgroundTint="@color/primary_blue"
+            android:onClick="oldUser"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             android:text="@string/app_btn_signin"
